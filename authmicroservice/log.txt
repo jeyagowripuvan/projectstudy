@@ -1,0 +1,452 @@
+2021-04-15 09:51:25.212  INFO 9496 --- [restartedMain] c.c.a.AuthmicroserviceApplication        : No active profile set, falling back to default profiles: default
+2021-04-15 09:51:27.429  INFO 9496 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-04-15 09:51:27.753  INFO 9496 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 309ms. Found 1 JPA repository interfaces.
+2021-04-15 09:51:28.579  INFO 9496 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=62f66093-a009-3a94-867a-05be3ab5949c
+2021-04-15 09:51:30.511  INFO 9496 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-15 09:51:30.537  INFO 9496 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-15 09:51:30.539  INFO 9496 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2021-04-15 09:51:30.887  INFO 9496 --- [restartedMain] o.a.c.c.C.[.[localhost].[/authapp]       : Initializing Spring embedded WebApplicationContext
+2021-04-15 09:51:30.888  INFO 9496 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5631 ms
+2021-04-15 09:51:31.031 DEBUG 9496 --- [restartedMain] c.c.a.jwt.JwtRequestFilter               : Filter 'jwtRequestFilter' configured for use
+2021-04-15 09:51:31.311  INFO 9496 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-15 09:51:31.418  INFO 9496 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-15 09:51:31.560  WARN 9496 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-15 09:51:31.608  INFO 9496 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2021-04-15 09:51:32.043  INFO 9496 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-04-15 09:51:32.453  INFO 9496 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-15 09:51:32.954  INFO 9496 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-15 09:51:33.150  INFO 9496 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-15 09:51:33.197  INFO 9496 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57InnoDBDialect
+2021-04-15 09:51:33.436  INFO 9496 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/authapp/login'], []
+2021-04-15 09:51:33.437  INFO 9496 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/h2-console/**'], []
+2021-04-15 09:51:33.440  INFO 9496 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/v2/api-docs'], []
+2021-04-15 09:51:33.441  INFO 9496 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/configuration/ui'], []
+2021-04-15 09:51:33.442  INFO 9496 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/swagger-resources/**'], []
+2021-04-15 09:51:33.444  INFO 9496 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/configuration/security'], []
+2021-04-15 09:51:33.445  INFO 9496 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/swagger-ui.html'], []
+2021-04-15 09:51:33.445  INFO 9496 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/webjars/**'], []
+2021-04-15 09:51:33.445  INFO 9496 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/authapp/swagger'], []
+2021-04-15 09:51:33.541  INFO 9496 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1d8bd571, org.springframework.security.web.context.SecurityContextPersistenceFilter@821cc6a, org.springframework.security.web.header.HeaderWriterFilter@4af792a4, org.springframework.security.web.authentication.logout.LogoutFilter@7b9a532f, com.casestudy.authmicroservice.jwt.JwtRequestFilter@e7f9b44, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@73c75e9b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6bac966d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6eac9910, org.springframework.security.web.session.SessionManagementFilter@1ecc46ed, org.springframework.security.web.access.ExceptionTranslationFilter@7e85684, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1de0f9f7]
+2021-04-15 09:51:33.649  WARN 9496 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-04-15 09:51:33.650  INFO 9496 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-04-15 09:51:33.665  WARN 9496 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-04-15 09:51:33.666  INFO 9496 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-04-15 09:51:34.115  WARN 9496 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2021-04-15 09:51:35.602  INFO 9496 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-15 09:51:35.621  INFO 9496 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-15 09:51:36.317  WARN 9496 --- [restartedMain] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2021-04-15 09:51:36.436  INFO 9496 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2021-04-15 09:51:36.584  INFO 9496 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2021-04-15 09:51:36.885  INFO 9496 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2021-04-15 09:51:36.887  INFO 9496 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2021-04-15 09:51:37.174  INFO 9496 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2021-04-15 09:51:37.175  INFO 9496 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2021-04-15 09:51:37.559  INFO 9496 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-04-15 09:51:37.920  INFO 9496 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2021-04-15 09:51:37.921  INFO 9496 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2021-04-15 09:51:37.921  INFO 9496 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2021-04-15 09:51:37.921  INFO 9496 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2021-04-15 09:51:37.922  INFO 9496 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2021-04-15 09:51:37.922  INFO 9496 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2021-04-15 09:51:37.923  INFO 9496 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2021-04-15 09:51:38.798  INFO 9496 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2021-04-15 09:51:38.803  INFO 9496 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2021-04-15 09:51:38.809  INFO 9496 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-04-15 09:51:38.820  INFO 9496 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1618460498817 with initial instances count: 0
+2021-04-15 09:51:38.826  INFO 9496 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application AUTHAPP with eureka with status UP
+2021-04-15 09:51:38.828  INFO 9496 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1618460498828, current=UP, previous=STARTING]
+2021-04-15 09:51:38.833  INFO 9496 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTHAPP/DESKTOP-Q9BUQP1:authapp:8080: registering service...
+2021-04-15 09:51:38.965  INFO 9496 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/authapp'
+2021-04-15 09:51:38.969  INFO 9496 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
+2021-04-15 09:51:39.318  INFO 9496 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTHAPP/DESKTOP-Q9BUQP1:authapp:8080 - registration status: 204
+2021-04-15 09:51:39.761  INFO 9496 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-04-15 09:51:39.794  INFO 9496 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-04-15 09:51:39.890  INFO 9496 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-15 09:51:40.356  INFO 9496 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2021-04-15 09:51:41.084  INFO 9496 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2021-04-15 09:51:41.102  INFO 9496 --- [restartedMain] c.c.a.AuthmicroserviceApplication        : Started AuthmicroserviceApplication in 18.396 seconds (JVM running for 19.852)
+2021-04-15 09:52:08.804  INFO 9496 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2021-04-15 09:52:08.805  INFO 9496 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2021-04-15 09:52:08.805  INFO 9496 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2021-04-15 09:52:08.807  INFO 9496 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2021-04-15 09:52:08.808  INFO 9496 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2021-04-15 09:52:08.809  INFO 9496 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2021-04-15 09:52:08.809  INFO 9496 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2021-04-15 09:52:09.016  INFO 9496 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2021-04-15 09:56:37.928  INFO 9496 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-04-15 09:57:10.292  INFO 9496 --- [http-nio-8080-exec-10] o.a.c.c.C.[.[localhost].[/authapp]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-15 09:57:10.294  INFO 9496 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-15 09:57:10.371  INFO 9496 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed initialization in 77 ms
+2021-04-15 09:57:10.624  INFO 9496 --- [http-nio-8080-exec-10] c.c.a.controller.UserController          : Inside Login controller
+2021-04-15 09:57:10.628  INFO 9496 --- [http-nio-8080-exec-10] c.c.a.service.UserServiceImpl            : Inside loadbyusername service
+2021-04-15 09:57:10.994 DEBUG 9496 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : select usermodel0_.user_id as user_id1_0_, usermodel0_.email as email2_0_, usermodel0_.mobile_no as mobile_n3_0_, usermodel0_.name as name4_0_, usermodel0_.password as password5_0_, usermodel0_.user_name as user_nam6_0_ from user usermodel0_ where usermodel0_.user_name=?
+2021-04-15 09:57:11.058 TRACE 9496 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [jeya]
+2021-04-15 09:57:11.069 TRACE 9496 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_id1_0_] : [INTEGER]) - [1]
+2021-04-15 09:57:11.083 TRACE 9496 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_0_] : [VARCHAR]) - [jeya@gmail.com]
+2021-04-15 09:57:11.085 TRACE 9496 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([mobile_n3_0_] : [VARCHAR]) - [9876543210]
+2021-04-15 09:57:11.086 TRACE 9496 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name4_0_] : [VARCHAR]) - [Jeya]
+2021-04-15 09:57:11.087 TRACE 9496 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([password5_0_] : [VARCHAR]) - [jeyaabcd]
+2021-04-15 09:57:11.088 TRACE 9496 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_nam6_0_] : [VARCHAR]) - [jeya]
+2021-04-15 09:57:11.109  INFO 9496 --- [http-nio-8080-exec-10] c.c.a.service.UserServiceImpl            : user has been loaded
+2021-04-15 09:57:11.115  INFO 9496 --- [http-nio-8080-exec-10] c.c.a.service.UserServiceImpl            : Inside login service
+2021-04-15 09:57:11.116  INFO 9496 --- [http-nio-8080-exec-10] c.c.a.service.UserServiceImpl            : user is valid
+2021-04-15 09:57:11.117 DEBUG 9496 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : select usermodel0_.user_id as user_id1_0_, usermodel0_.email as email2_0_, usermodel0_.mobile_no as mobile_n3_0_, usermodel0_.name as name4_0_, usermodel0_.password as password5_0_, usermodel0_.user_name as user_nam6_0_ from user usermodel0_ where usermodel0_.user_name=?
+2021-04-15 09:57:11.119 TRACE 9496 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [jeya]
+2021-04-15 09:57:11.122 TRACE 9496 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_id1_0_] : [INTEGER]) - [1]
+2021-04-15 09:57:12.021  INFO 9496 --- [http-nio-8080-exec-10] c.c.a.service.UserServiceImpl            : user token has been generated
+2021-04-15 10:01:37.933  INFO 9496 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-04-15 10:03:31.197  INFO 9496 --- [http-nio-8080-exec-8] c.c.a.service.UserServiceImpl            : Inside loadbyusername service
+2021-04-15 10:03:31.313 DEBUG 9496 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : select usermodel0_.user_id as user_id1_0_, usermodel0_.email as email2_0_, usermodel0_.mobile_no as mobile_n3_0_, usermodel0_.name as name4_0_, usermodel0_.password as password5_0_, usermodel0_.user_name as user_nam6_0_ from user usermodel0_ where usermodel0_.user_name=?
+2021-04-15 10:03:31.316 TRACE 9496 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [jeya]
+2021-04-15 10:03:31.318 TRACE 9496 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_id1_0_] : [INTEGER]) - [1]
+2021-04-15 10:03:31.320 TRACE 9496 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_0_] : [VARCHAR]) - [jeya@gmail.com]
+2021-04-15 10:03:31.321 TRACE 9496 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([mobile_n3_0_] : [VARCHAR]) - [9876543210]
+2021-04-15 10:03:31.322 TRACE 9496 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name4_0_] : [VARCHAR]) - [Jeya]
+2021-04-15 10:03:31.324 TRACE 9496 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([password5_0_] : [VARCHAR]) - [jeyaabcd]
+2021-04-15 10:03:31.325 TRACE 9496 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_nam6_0_] : [VARCHAR]) - [jeya]
+2021-04-15 10:03:31.326  INFO 9496 --- [http-nio-8080-exec-8] c.c.a.service.UserServiceImpl            : user has been loaded
+2021-04-15 10:03:31.333  INFO 9496 --- [http-nio-8080-exec-8] c.c.a.controller.UserController          : Inside Token Validation controller
+2021-04-15 10:03:31.334  INFO 9496 --- [http-nio-8080-exec-8] c.c.a.service.UserServiceImpl            : Inside get validity service
+2021-04-15 10:03:31.336  INFO 9496 --- [http-nio-8080-exec-8] c.c.a.service.UserServiceImpl            : Token is valid
+2021-04-15 10:03:31.342 DEBUG 9496 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : select usermodel0_.user_id as user_id1_0_, usermodel0_.email as email2_0_, usermodel0_.mobile_no as mobile_n3_0_, usermodel0_.name as name4_0_, usermodel0_.password as password5_0_, usermodel0_.user_name as user_nam6_0_ from user usermodel0_ where usermodel0_.user_name=?
+2021-04-15 10:03:31.344 TRACE 9496 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [jeya]
+2021-04-15 10:03:31.347 TRACE 9496 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_id1_0_] : [INTEGER]) - [1]
+2021-04-15 10:03:31.349 TRACE 9496 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_0_] : [VARCHAR]) - [jeya@gmail.com]
+2021-04-15 10:03:31.351 TRACE 9496 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([mobile_n3_0_] : [VARCHAR]) - [9876543210]
+2021-04-15 10:03:31.354 TRACE 9496 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name4_0_] : [VARCHAR]) - [Jeya]
+2021-04-15 10:03:31.355 TRACE 9496 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([password5_0_] : [VARCHAR]) - [jeyaabcd]
+2021-04-15 10:03:31.356 TRACE 9496 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_nam6_0_] : [VARCHAR]) - [jeya]
+2021-04-15 10:03:31.358  INFO 9496 --- [http-nio-8080-exec-8] c.c.a.service.UserServiceImpl            : user is validated
+2021-04-15 10:06:37.936  INFO 9496 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-04-15 10:11:37.938  INFO 9496 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-04-15 10:16:37.939  INFO 9496 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-04-15 10:17:17.115 ERROR 9496 --- [http-nio-8080-exec-6] c.c.a.exception.RestExceptionHandler     : Required Bearer token
+2021-04-15 10:17:17.135  WARN 9496 --- [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingRequestHeaderException: Missing request header 'Authorization' for method parameter of type String]
+2021-04-15 10:17:29.812  INFO 9496 --- [http-nio-8080-exec-5] c.c.a.controller.UserController          : Inside Login controller
+2021-04-15 10:17:29.813  INFO 9496 --- [http-nio-8080-exec-5] c.c.a.service.UserServiceImpl            : Inside loadbyusername service
+2021-04-15 10:17:29.815 DEBUG 9496 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select usermodel0_.user_id as user_id1_0_, usermodel0_.email as email2_0_, usermodel0_.mobile_no as mobile_n3_0_, usermodel0_.name as name4_0_, usermodel0_.password as password5_0_, usermodel0_.user_name as user_nam6_0_ from user usermodel0_ where usermodel0_.user_name=?
+2021-04-15 10:17:29.817 TRACE 9496 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [jeya]
+2021-04-15 10:17:29.820 TRACE 9496 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_id1_0_] : [INTEGER]) - [1]
+2021-04-15 10:17:29.822 TRACE 9496 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_0_] : [VARCHAR]) - [jeya@gmail.com]
+2021-04-15 10:17:29.823 TRACE 9496 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([mobile_n3_0_] : [VARCHAR]) - [9876543210]
+2021-04-15 10:17:29.824 TRACE 9496 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name4_0_] : [VARCHAR]) - [Jeya]
+2021-04-15 10:17:29.825 TRACE 9496 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([password5_0_] : [VARCHAR]) - [jeyaabcd]
+2021-04-15 10:17:29.828 TRACE 9496 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_nam6_0_] : [VARCHAR]) - [jeya]
+2021-04-15 10:17:29.829  INFO 9496 --- [http-nio-8080-exec-5] c.c.a.service.UserServiceImpl            : user has been loaded
+2021-04-15 10:17:29.830  INFO 9496 --- [http-nio-8080-exec-5] c.c.a.service.UserServiceImpl            : Inside login service
+2021-04-15 10:17:29.831  INFO 9496 --- [http-nio-8080-exec-5] c.c.a.service.UserServiceImpl            : user is valid
+2021-04-15 10:17:29.832 DEBUG 9496 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select usermodel0_.user_id as user_id1_0_, usermodel0_.email as email2_0_, usermodel0_.mobile_no as mobile_n3_0_, usermodel0_.name as name4_0_, usermodel0_.password as password5_0_, usermodel0_.user_name as user_nam6_0_ from user usermodel0_ where usermodel0_.user_name=?
+2021-04-15 10:17:29.834 TRACE 9496 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [jeya]
+2021-04-15 10:17:29.836 TRACE 9496 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_id1_0_] : [INTEGER]) - [1]
+2021-04-15 10:17:29.847  INFO 9496 --- [http-nio-8080-exec-5] c.c.a.service.UserServiceImpl            : user token has been generated
+2021-04-15 10:17:42.350 ERROR 9496 --- [http-nio-8080-exec-4] c.c.a.exception.RestExceptionHandler     : Required Bearer token
+2021-04-15 10:17:42.357  WARN 9496 --- [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingRequestHeaderException: Missing request header 'Authorization' for method parameter of type String]
+2021-04-15 10:21:37.943  INFO 9496 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-04-15 10:22:05.798  INFO 9496 --- [http-nio-8080-exec-2] c.c.a.service.UserServiceImpl            : Inside loadbyusername service
+2021-04-15 10:22:05.799 DEBUG 9496 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select usermodel0_.user_id as user_id1_0_, usermodel0_.email as email2_0_, usermodel0_.mobile_no as mobile_n3_0_, usermodel0_.name as name4_0_, usermodel0_.password as password5_0_, usermodel0_.user_name as user_nam6_0_ from user usermodel0_ where usermodel0_.user_name=?
+2021-04-15 10:22:05.803 TRACE 9496 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [jeya]
+2021-04-15 10:22:05.805 TRACE 9496 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_id1_0_] : [INTEGER]) - [1]
+2021-04-15 10:22:05.806 TRACE 9496 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_0_] : [VARCHAR]) - [jeya@gmail.com]
+2021-04-15 10:22:05.807 TRACE 9496 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([mobile_n3_0_] : [VARCHAR]) - [9876543210]
+2021-04-15 10:22:05.808 TRACE 9496 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name4_0_] : [VARCHAR]) - [Jeya]
+2021-04-15 10:22:05.808 TRACE 9496 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([password5_0_] : [VARCHAR]) - [jeyaabcd]
+2021-04-15 10:22:05.809 TRACE 9496 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_nam6_0_] : [VARCHAR]) - [jeya]
+2021-04-15 10:22:05.811  INFO 9496 --- [http-nio-8080-exec-2] c.c.a.service.UserServiceImpl            : user has been loaded
+2021-04-15 10:22:05.816  INFO 9496 --- [http-nio-8080-exec-2] c.c.a.controller.UserController          : Inside Token Validation controller
+2021-04-15 10:22:05.816  INFO 9496 --- [http-nio-8080-exec-2] c.c.a.service.UserServiceImpl            : Inside get validity service
+2021-04-15 10:22:05.818  INFO 9496 --- [http-nio-8080-exec-2] c.c.a.service.UserServiceImpl            : Token is valid
+2021-04-15 10:22:05.822 DEBUG 9496 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select usermodel0_.user_id as user_id1_0_, usermodel0_.email as email2_0_, usermodel0_.mobile_no as mobile_n3_0_, usermodel0_.name as name4_0_, usermodel0_.password as password5_0_, usermodel0_.user_name as user_nam6_0_ from user usermodel0_ where usermodel0_.user_name=?
+2021-04-15 10:22:05.824 TRACE 9496 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [jeya]
+2021-04-15 10:22:05.826 TRACE 9496 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_id1_0_] : [INTEGER]) - [1]
+2021-04-15 10:22:05.827 TRACE 9496 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_0_] : [VARCHAR]) - [jeya@gmail.com]
+2021-04-15 10:22:05.828 TRACE 9496 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([mobile_n3_0_] : [VARCHAR]) - [9876543210]
+2021-04-15 10:22:05.829 TRACE 9496 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name4_0_] : [VARCHAR]) - [Jeya]
+2021-04-15 10:22:05.830 TRACE 9496 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([password5_0_] : [VARCHAR]) - [jeyaabcd]
+2021-04-15 10:22:05.831 TRACE 9496 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_nam6_0_] : [VARCHAR]) - [jeya]
+2021-04-15 10:22:05.832  INFO 9496 --- [http-nio-8080-exec-2] c.c.a.service.UserServiceImpl            : user is validated
+2021-04-15 10:26:37.945  INFO 9496 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-04-15 10:31:37.948  INFO 9496 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-04-15 10:36:37.953  INFO 9496 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-04-15 10:39:32.820  INFO 9496 --- [http-nio-8080-exec-10] c.c.a.controller.UserController          : Inside Token Validation controller
+2021-04-15 10:39:32.821  INFO 9496 --- [http-nio-8080-exec-10] c.c.a.service.UserServiceImpl            : Inside get validity service
+2021-04-15 10:39:32.823 ERROR 9496 --- [http-nio-8080-exec-10] c.c.a.service.UserServiceImpl            : Token Has Expired
+2021-04-15 10:39:40.914  INFO 9496 --- [http-nio-8080-exec-9] c.c.a.controller.UserController          : Inside Login controller
+2021-04-15 10:39:40.915  INFO 9496 --- [http-nio-8080-exec-9] c.c.a.service.UserServiceImpl            : Inside loadbyusername service
+2021-04-15 10:39:40.917 DEBUG 9496 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : select usermodel0_.user_id as user_id1_0_, usermodel0_.email as email2_0_, usermodel0_.mobile_no as mobile_n3_0_, usermodel0_.name as name4_0_, usermodel0_.password as password5_0_, usermodel0_.user_name as user_nam6_0_ from user usermodel0_ where usermodel0_.user_name=?
+2021-04-15 10:39:40.920 TRACE 9496 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [jeya]
+2021-04-15 10:39:40.922 TRACE 9496 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_id1_0_] : [INTEGER]) - [1]
+2021-04-15 10:39:40.923 TRACE 9496 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_0_] : [VARCHAR]) - [jeya@gmail.com]
+2021-04-15 10:39:40.924 TRACE 9496 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([mobile_n3_0_] : [VARCHAR]) - [9876543210]
+2021-04-15 10:39:40.926 TRACE 9496 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name4_0_] : [VARCHAR]) - [Jeya]
+2021-04-15 10:39:40.927 TRACE 9496 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([password5_0_] : [VARCHAR]) - [jeyaabcd]
+2021-04-15 10:39:40.928 TRACE 9496 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_nam6_0_] : [VARCHAR]) - [jeya]
+2021-04-15 10:39:40.929  INFO 9496 --- [http-nio-8080-exec-9] c.c.a.service.UserServiceImpl            : user has been loaded
+2021-04-15 10:39:40.930  INFO 9496 --- [http-nio-8080-exec-9] c.c.a.service.UserServiceImpl            : Inside login service
+2021-04-15 10:39:40.931  INFO 9496 --- [http-nio-8080-exec-9] c.c.a.service.UserServiceImpl            : user is valid
+2021-04-15 10:39:40.932 DEBUG 9496 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : select usermodel0_.user_id as user_id1_0_, usermodel0_.email as email2_0_, usermodel0_.mobile_no as mobile_n3_0_, usermodel0_.name as name4_0_, usermodel0_.password as password5_0_, usermodel0_.user_name as user_nam6_0_ from user usermodel0_ where usermodel0_.user_name=?
+2021-04-15 10:39:40.934 TRACE 9496 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [jeya]
+2021-04-15 10:39:40.936 TRACE 9496 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_id1_0_] : [INTEGER]) - [1]
+2021-04-15 10:39:40.938  INFO 9496 --- [http-nio-8080-exec-9] c.c.a.service.UserServiceImpl            : user token has been generated
+2021-04-15 10:39:55.044  INFO 9496 --- [http-nio-8080-exec-8] c.c.a.service.UserServiceImpl            : Inside loadbyusername service
+2021-04-15 10:39:55.050 DEBUG 9496 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : select usermodel0_.user_id as user_id1_0_, usermodel0_.email as email2_0_, usermodel0_.mobile_no as mobile_n3_0_, usermodel0_.name as name4_0_, usermodel0_.password as password5_0_, usermodel0_.user_name as user_nam6_0_ from user usermodel0_ where usermodel0_.user_name=?
+2021-04-15 10:39:55.055 TRACE 9496 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [jeya]
+2021-04-15 10:39:55.058 TRACE 9496 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_id1_0_] : [INTEGER]) - [1]
+2021-04-15 10:39:55.059 TRACE 9496 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_0_] : [VARCHAR]) - [jeya@gmail.com]
+2021-04-15 10:39:55.060 TRACE 9496 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([mobile_n3_0_] : [VARCHAR]) - [9876543210]
+2021-04-15 10:39:55.061 TRACE 9496 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name4_0_] : [VARCHAR]) - [Jeya]
+2021-04-15 10:39:55.062 TRACE 9496 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([password5_0_] : [VARCHAR]) - [jeyaabcd]
+2021-04-15 10:39:55.063 TRACE 9496 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_nam6_0_] : [VARCHAR]) - [jeya]
+2021-04-15 10:39:55.065  INFO 9496 --- [http-nio-8080-exec-8] c.c.a.service.UserServiceImpl            : user has been loaded
+2021-04-15 10:39:55.068  INFO 9496 --- [http-nio-8080-exec-8] c.c.a.controller.UserController          : Inside Token Validation controller
+2021-04-15 10:39:55.069  INFO 9496 --- [http-nio-8080-exec-8] c.c.a.service.UserServiceImpl            : Inside get validity service
+2021-04-15 10:39:55.072  INFO 9496 --- [http-nio-8080-exec-8] c.c.a.service.UserServiceImpl            : Token is valid
+2021-04-15 10:39:55.075 DEBUG 9496 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : select usermodel0_.user_id as user_id1_0_, usermodel0_.email as email2_0_, usermodel0_.mobile_no as mobile_n3_0_, usermodel0_.name as name4_0_, usermodel0_.password as password5_0_, usermodel0_.user_name as user_nam6_0_ from user usermodel0_ where usermodel0_.user_name=?
+2021-04-15 10:39:55.077 TRACE 9496 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [jeya]
+2021-04-15 10:39:55.079 TRACE 9496 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_id1_0_] : [INTEGER]) - [1]
+2021-04-15 10:39:55.080 TRACE 9496 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_0_] : [VARCHAR]) - [jeya@gmail.com]
+2021-04-15 10:39:55.081 TRACE 9496 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([mobile_n3_0_] : [VARCHAR]) - [9876543210]
+2021-04-15 10:39:55.082 TRACE 9496 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name4_0_] : [VARCHAR]) - [Jeya]
+2021-04-15 10:39:55.083 TRACE 9496 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([password5_0_] : [VARCHAR]) - [jeyaabcd]
+2021-04-15 10:39:55.084 TRACE 9496 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_nam6_0_] : [VARCHAR]) - [jeya]
+2021-04-15 10:39:55.085  INFO 9496 --- [http-nio-8080-exec-8] c.c.a.service.UserServiceImpl            : user is validated
+2021-04-15 10:40:54.033  INFO 9496 --- [http-nio-8080-exec-6] c.c.a.controller.UserController          : Inside Login controller
+2021-04-15 10:40:54.034  INFO 9496 --- [http-nio-8080-exec-6] c.c.a.service.UserServiceImpl            : Inside loadbyusername service
+2021-04-15 10:40:54.035 DEBUG 9496 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select usermodel0_.user_id as user_id1_0_, usermodel0_.email as email2_0_, usermodel0_.mobile_no as mobile_n3_0_, usermodel0_.name as name4_0_, usermodel0_.password as password5_0_, usermodel0_.user_name as user_nam6_0_ from user usermodel0_ where usermodel0_.user_name=?
+2021-04-15 10:40:54.036 TRACE 9496 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [jeya]
+2021-04-15 10:40:54.038 TRACE 9496 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_id1_0_] : [INTEGER]) - [1]
+2021-04-15 10:40:54.039 TRACE 9496 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_0_] : [VARCHAR]) - [jeya@gmail.com]
+2021-04-15 10:40:54.039 TRACE 9496 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([mobile_n3_0_] : [VARCHAR]) - [9876543210]
+2021-04-15 10:40:54.040 TRACE 9496 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name4_0_] : [VARCHAR]) - [Jeya]
+2021-04-15 10:40:54.040 TRACE 9496 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([password5_0_] : [VARCHAR]) - [jeyaabcd]
+2021-04-15 10:40:54.042 TRACE 9496 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_nam6_0_] : [VARCHAR]) - [jeya]
+2021-04-15 10:40:54.043  INFO 9496 --- [http-nio-8080-exec-6] c.c.a.service.UserServiceImpl            : user has been loaded
+2021-04-15 10:40:54.043  INFO 9496 --- [http-nio-8080-exec-6] c.c.a.service.UserServiceImpl            : Inside login service
+2021-04-15 10:40:54.044  INFO 9496 --- [http-nio-8080-exec-6] c.c.a.service.UserServiceImpl            : user is valid
+2021-04-15 10:40:54.045 DEBUG 9496 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select usermodel0_.user_id as user_id1_0_, usermodel0_.email as email2_0_, usermodel0_.mobile_no as mobile_n3_0_, usermodel0_.name as name4_0_, usermodel0_.password as password5_0_, usermodel0_.user_name as user_nam6_0_ from user usermodel0_ where usermodel0_.user_name=?
+2021-04-15 10:40:54.046 TRACE 9496 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [jeya]
+2021-04-15 10:40:54.048 TRACE 9496 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_id1_0_] : [INTEGER]) - [1]
+2021-04-15 10:40:54.051  INFO 9496 --- [http-nio-8080-exec-6] c.c.a.service.UserServiceImpl            : user token has been generated
+2021-04-15 10:40:54.127  INFO 9496 --- [http-nio-8080-exec-5] c.c.a.service.UserServiceImpl            : Inside loadbyusername service
+2021-04-15 10:40:54.129 DEBUG 9496 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select usermodel0_.user_id as user_id1_0_, usermodel0_.email as email2_0_, usermodel0_.mobile_no as mobile_n3_0_, usermodel0_.name as name4_0_, usermodel0_.password as password5_0_, usermodel0_.user_name as user_nam6_0_ from user usermodel0_ where usermodel0_.user_name=?
+2021-04-15 10:40:54.130 TRACE 9496 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [jeya]
+2021-04-15 10:40:54.132 TRACE 9496 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_id1_0_] : [INTEGER]) - [1]
+2021-04-15 10:40:54.134 TRACE 9496 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_0_] : [VARCHAR]) - [jeya@gmail.com]
+2021-04-15 10:40:54.135 TRACE 9496 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([mobile_n3_0_] : [VARCHAR]) - [9876543210]
+2021-04-15 10:40:54.136 TRACE 9496 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name4_0_] : [VARCHAR]) - [Jeya]
+2021-04-15 10:40:54.137 TRACE 9496 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([password5_0_] : [VARCHAR]) - [jeyaabcd]
+2021-04-15 10:40:54.137 TRACE 9496 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_nam6_0_] : [VARCHAR]) - [jeya]
+2021-04-15 10:40:54.139  INFO 9496 --- [http-nio-8080-exec-5] c.c.a.service.UserServiceImpl            : user has been loaded
+2021-04-15 10:40:54.143  INFO 9496 --- [http-nio-8080-exec-5] c.c.a.controller.UserController          : Inside Token Validation controller
+2021-04-15 10:40:54.143  INFO 9496 --- [http-nio-8080-exec-5] c.c.a.service.UserServiceImpl            : Inside get validity service
+2021-04-15 10:40:54.145  INFO 9496 --- [http-nio-8080-exec-5] c.c.a.service.UserServiceImpl            : Token is valid
+2021-04-15 10:40:54.149 DEBUG 9496 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select usermodel0_.user_id as user_id1_0_, usermodel0_.email as email2_0_, usermodel0_.mobile_no as mobile_n3_0_, usermodel0_.name as name4_0_, usermodel0_.password as password5_0_, usermodel0_.user_name as user_nam6_0_ from user usermodel0_ where usermodel0_.user_name=?
+2021-04-15 10:40:54.150 TRACE 9496 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [jeya]
+2021-04-15 10:40:54.153 TRACE 9496 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_id1_0_] : [INTEGER]) - [1]
+2021-04-15 10:40:54.154 TRACE 9496 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_0_] : [VARCHAR]) - [jeya@gmail.com]
+2021-04-15 10:40:54.154 TRACE 9496 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([mobile_n3_0_] : [VARCHAR]) - [9876543210]
+2021-04-15 10:40:54.155 TRACE 9496 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name4_0_] : [VARCHAR]) - [Jeya]
+2021-04-15 10:40:54.156 TRACE 9496 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([password5_0_] : [VARCHAR]) - [jeyaabcd]
+2021-04-15 10:40:54.157 TRACE 9496 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_nam6_0_] : [VARCHAR]) - [jeya]
+2021-04-15 10:40:54.162  INFO 9496 --- [http-nio-8080-exec-5] c.c.a.service.UserServiceImpl            : user is validated
+2021-04-15 10:40:56.805  INFO 9496 --- [http-nio-8080-exec-4] c.c.a.controller.UserController          : Inside get user controller
+2021-04-15 10:40:56.806  INFO 9496 --- [http-nio-8080-exec-4] c.c.a.service.UserServiceImpl            : Inside getuser service
+2021-04-15 10:40:56.808 DEBUG 9496 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select usermodel0_.user_id as user_id1_0_, usermodel0_.email as email2_0_, usermodel0_.mobile_no as mobile_n3_0_, usermodel0_.name as name4_0_, usermodel0_.password as password5_0_, usermodel0_.user_name as user_nam6_0_ from user usermodel0_ where usermodel0_.user_name=?
+2021-04-15 10:40:56.810 TRACE 9496 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [jeya]
+2021-04-15 10:40:56.814 TRACE 9496 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_id1_0_] : [INTEGER]) - [1]
+2021-04-15 10:40:56.816 TRACE 9496 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_0_] : [VARCHAR]) - [jeya@gmail.com]
+2021-04-15 10:40:56.818 TRACE 9496 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([mobile_n3_0_] : [VARCHAR]) - [9876543210]
+2021-04-15 10:40:56.820 TRACE 9496 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name4_0_] : [VARCHAR]) - [Jeya]
+2021-04-15 10:40:56.821 TRACE 9496 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([password5_0_] : [VARCHAR]) - [jeyaabcd]
+2021-04-15 10:40:56.822 TRACE 9496 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_nam6_0_] : [VARCHAR]) - [jeya]
+2021-04-15 10:40:56.884  INFO 9496 --- [http-nio-8080-exec-3] c.c.a.service.UserServiceImpl            : Inside loadbyusername service
+2021-04-15 10:40:56.887 DEBUG 9496 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select usermodel0_.user_id as user_id1_0_, usermodel0_.email as email2_0_, usermodel0_.mobile_no as mobile_n3_0_, usermodel0_.name as name4_0_, usermodel0_.password as password5_0_, usermodel0_.user_name as user_nam6_0_ from user usermodel0_ where usermodel0_.user_name=?
+2021-04-15 10:40:56.888 TRACE 9496 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [jeya]
+2021-04-15 10:40:56.891 TRACE 9496 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_id1_0_] : [INTEGER]) - [1]
+2021-04-15 10:40:56.892 TRACE 9496 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_0_] : [VARCHAR]) - [jeya@gmail.com]
+2021-04-15 10:40:56.893 TRACE 9496 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([mobile_n3_0_] : [VARCHAR]) - [9876543210]
+2021-04-15 10:40:56.896 TRACE 9496 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name4_0_] : [VARCHAR]) - [Jeya]
+2021-04-15 10:40:56.897 TRACE 9496 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([password5_0_] : [VARCHAR]) - [jeyaabcd]
+2021-04-15 10:40:56.898 TRACE 9496 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_nam6_0_] : [VARCHAR]) - [jeya]
+2021-04-15 10:40:56.900  INFO 9496 --- [http-nio-8080-exec-3] c.c.a.service.UserServiceImpl            : user has been loaded
+2021-04-15 10:40:56.904  INFO 9496 --- [http-nio-8080-exec-3] c.c.a.controller.UserController          : Inside Token Validation controller
+2021-04-15 10:40:56.905  INFO 9496 --- [http-nio-8080-exec-3] c.c.a.service.UserServiceImpl            : Inside get validity service
+2021-04-15 10:40:56.907  INFO 9496 --- [http-nio-8080-exec-3] c.c.a.service.UserServiceImpl            : Token is valid
+2021-04-15 10:40:56.914 DEBUG 9496 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select usermodel0_.user_id as user_id1_0_, usermodel0_.email as email2_0_, usermodel0_.mobile_no as mobile_n3_0_, usermodel0_.name as name4_0_, usermodel0_.password as password5_0_, usermodel0_.user_name as user_nam6_0_ from user usermodel0_ where usermodel0_.user_name=?
+2021-04-15 10:40:56.916 TRACE 9496 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [jeya]
+2021-04-15 10:40:56.919 TRACE 9496 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_id1_0_] : [INTEGER]) - [1]
+2021-04-15 10:40:56.922 TRACE 9496 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_0_] : [VARCHAR]) - [jeya@gmail.com]
+2021-04-15 10:40:56.923 TRACE 9496 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([mobile_n3_0_] : [VARCHAR]) - [9876543210]
+2021-04-15 10:40:56.925 TRACE 9496 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name4_0_] : [VARCHAR]) - [Jeya]
+2021-04-15 10:40:56.926 TRACE 9496 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([password5_0_] : [VARCHAR]) - [jeyaabcd]
+2021-04-15 10:40:56.929 TRACE 9496 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_nam6_0_] : [VARCHAR]) - [jeya]
+2021-04-15 10:40:56.932  INFO 9496 --- [http-nio-8080-exec-3] c.c.a.service.UserServiceImpl            : user is validated
+2021-04-15 10:41:01.384  INFO 9496 --- [http-nio-8080-exec-2] c.c.a.service.UserServiceImpl            : Inside loadbyusername service
+2021-04-15 10:41:01.385 DEBUG 9496 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select usermodel0_.user_id as user_id1_0_, usermodel0_.email as email2_0_, usermodel0_.mobile_no as mobile_n3_0_, usermodel0_.name as name4_0_, usermodel0_.password as password5_0_, usermodel0_.user_name as user_nam6_0_ from user usermodel0_ where usermodel0_.user_name=?
+2021-04-15 10:41:01.387 TRACE 9496 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [jeya]
+2021-04-15 10:41:01.388 TRACE 9496 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_id1_0_] : [INTEGER]) - [1]
+2021-04-15 10:41:01.389 TRACE 9496 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_0_] : [VARCHAR]) - [jeya@gmail.com]
+2021-04-15 10:41:01.390 TRACE 9496 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([mobile_n3_0_] : [VARCHAR]) - [9876543210]
+2021-04-15 10:41:01.391 TRACE 9496 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name4_0_] : [VARCHAR]) - [Jeya]
+2021-04-15 10:41:01.392 TRACE 9496 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([password5_0_] : [VARCHAR]) - [jeyaabcd]
+2021-04-15 10:41:01.392 TRACE 9496 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_nam6_0_] : [VARCHAR]) - [jeya]
+2021-04-15 10:41:01.394  INFO 9496 --- [http-nio-8080-exec-2] c.c.a.service.UserServiceImpl            : user has been loaded
+2021-04-15 10:41:01.397  INFO 9496 --- [http-nio-8080-exec-2] c.c.a.controller.UserController          : Inside Token Validation controller
+2021-04-15 10:41:01.398  INFO 9496 --- [http-nio-8080-exec-2] c.c.a.service.UserServiceImpl            : Inside get validity service
+2021-04-15 10:41:01.400  INFO 9496 --- [http-nio-8080-exec-2] c.c.a.service.UserServiceImpl            : Token is valid
+2021-04-15 10:41:01.403 DEBUG 9496 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select usermodel0_.user_id as user_id1_0_, usermodel0_.email as email2_0_, usermodel0_.mobile_no as mobile_n3_0_, usermodel0_.name as name4_0_, usermodel0_.password as password5_0_, usermodel0_.user_name as user_nam6_0_ from user usermodel0_ where usermodel0_.user_name=?
+2021-04-15 10:41:01.404 TRACE 9496 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [jeya]
+2021-04-15 10:41:01.406 TRACE 9496 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_id1_0_] : [INTEGER]) - [1]
+2021-04-15 10:41:01.406 TRACE 9496 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_0_] : [VARCHAR]) - [jeya@gmail.com]
+2021-04-15 10:41:01.407 TRACE 9496 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([mobile_n3_0_] : [VARCHAR]) - [9876543210]
+2021-04-15 10:41:01.408 TRACE 9496 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name4_0_] : [VARCHAR]) - [Jeya]
+2021-04-15 10:41:01.408 TRACE 9496 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([password5_0_] : [VARCHAR]) - [jeyaabcd]
+2021-04-15 10:41:01.409 TRACE 9496 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_nam6_0_] : [VARCHAR]) - [jeya]
+2021-04-15 10:41:01.410  INFO 9496 --- [http-nio-8080-exec-2] c.c.a.service.UserServiceImpl            : user is validated
+2021-04-15 10:41:16.589  INFO 9496 --- [http-nio-8080-exec-1] c.c.a.service.UserServiceImpl            : Inside loadbyusername service
+2021-04-15 10:41:16.593 DEBUG 9496 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select usermodel0_.user_id as user_id1_0_, usermodel0_.email as email2_0_, usermodel0_.mobile_no as mobile_n3_0_, usermodel0_.name as name4_0_, usermodel0_.password as password5_0_, usermodel0_.user_name as user_nam6_0_ from user usermodel0_ where usermodel0_.user_name=?
+2021-04-15 10:41:16.594 TRACE 9496 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [jeya]
+2021-04-15 10:41:16.596 TRACE 9496 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_id1_0_] : [INTEGER]) - [1]
+2021-04-15 10:41:16.597 TRACE 9496 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_0_] : [VARCHAR]) - [jeya@gmail.com]
+2021-04-15 10:41:16.598 TRACE 9496 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([mobile_n3_0_] : [VARCHAR]) - [9876543210]
+2021-04-15 10:41:16.599 TRACE 9496 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name4_0_] : [VARCHAR]) - [Jeya]
+2021-04-15 10:41:16.599 TRACE 9496 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([password5_0_] : [VARCHAR]) - [jeyaabcd]
+2021-04-15 10:41:16.600 TRACE 9496 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_nam6_0_] : [VARCHAR]) - [jeya]
+2021-04-15 10:41:16.601  INFO 9496 --- [http-nio-8080-exec-1] c.c.a.service.UserServiceImpl            : user has been loaded
+2021-04-15 10:41:16.604  INFO 9496 --- [http-nio-8080-exec-1] c.c.a.controller.UserController          : Inside Token Validation controller
+2021-04-15 10:41:16.605  INFO 9496 --- [http-nio-8080-exec-1] c.c.a.service.UserServiceImpl            : Inside get validity service
+2021-04-15 10:41:16.607  INFO 9496 --- [http-nio-8080-exec-1] c.c.a.service.UserServiceImpl            : Token is valid
+2021-04-15 10:41:16.609 DEBUG 9496 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select usermodel0_.user_id as user_id1_0_, usermodel0_.email as email2_0_, usermodel0_.mobile_no as mobile_n3_0_, usermodel0_.name as name4_0_, usermodel0_.password as password5_0_, usermodel0_.user_name as user_nam6_0_ from user usermodel0_ where usermodel0_.user_name=?
+2021-04-15 10:41:16.611 TRACE 9496 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [jeya]
+2021-04-15 10:41:16.613 TRACE 9496 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_id1_0_] : [INTEGER]) - [1]
+2021-04-15 10:41:16.615 TRACE 9496 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_0_] : [VARCHAR]) - [jeya@gmail.com]
+2021-04-15 10:41:16.616 TRACE 9496 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([mobile_n3_0_] : [VARCHAR]) - [9876543210]
+2021-04-15 10:41:16.617 TRACE 9496 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name4_0_] : [VARCHAR]) - [Jeya]
+2021-04-15 10:41:16.617 TRACE 9496 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([password5_0_] : [VARCHAR]) - [jeyaabcd]
+2021-04-15 10:41:16.618 TRACE 9496 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_nam6_0_] : [VARCHAR]) - [jeya]
+2021-04-15 10:41:16.619  INFO 9496 --- [http-nio-8080-exec-1] c.c.a.service.UserServiceImpl            : user is validated
+2021-04-15 10:41:17.061  INFO 9496 --- [http-nio-8080-exec-10] c.c.a.service.UserServiceImpl            : Inside loadbyusername service
+2021-04-15 10:41:17.063 DEBUG 9496 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : select usermodel0_.user_id as user_id1_0_, usermodel0_.email as email2_0_, usermodel0_.mobile_no as mobile_n3_0_, usermodel0_.name as name4_0_, usermodel0_.password as password5_0_, usermodel0_.user_name as user_nam6_0_ from user usermodel0_ where usermodel0_.user_name=?
+2021-04-15 10:41:17.064 TRACE 9496 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [jeya]
+2021-04-15 10:41:17.066 TRACE 9496 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_id1_0_] : [INTEGER]) - [1]
+2021-04-15 10:41:17.067 TRACE 9496 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_0_] : [VARCHAR]) - [jeya@gmail.com]
+2021-04-15 10:41:17.068 TRACE 9496 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([mobile_n3_0_] : [VARCHAR]) - [9876543210]
+2021-04-15 10:41:17.069 TRACE 9496 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name4_0_] : [VARCHAR]) - [Jeya]
+2021-04-15 10:41:17.070 TRACE 9496 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([password5_0_] : [VARCHAR]) - [jeyaabcd]
+2021-04-15 10:41:17.071 TRACE 9496 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_nam6_0_] : [VARCHAR]) - [jeya]
+2021-04-15 10:41:17.072  INFO 9496 --- [http-nio-8080-exec-10] c.c.a.service.UserServiceImpl            : user has been loaded
+2021-04-15 10:41:17.079  INFO 9496 --- [http-nio-8080-exec-10] c.c.a.controller.UserController          : Inside Token Validation controller
+2021-04-15 10:41:17.080  INFO 9496 --- [http-nio-8080-exec-10] c.c.a.service.UserServiceImpl            : Inside get validity service
+2021-04-15 10:41:17.082  INFO 9496 --- [http-nio-8080-exec-10] c.c.a.service.UserServiceImpl            : Token is valid
+2021-04-15 10:41:17.086 DEBUG 9496 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : select usermodel0_.user_id as user_id1_0_, usermodel0_.email as email2_0_, usermodel0_.mobile_no as mobile_n3_0_, usermodel0_.name as name4_0_, usermodel0_.password as password5_0_, usermodel0_.user_name as user_nam6_0_ from user usermodel0_ where usermodel0_.user_name=?
+2021-04-15 10:41:17.087 TRACE 9496 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [jeya]
+2021-04-15 10:41:17.090 TRACE 9496 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_id1_0_] : [INTEGER]) - [1]
+2021-04-15 10:41:17.091 TRACE 9496 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_0_] : [VARCHAR]) - [jeya@gmail.com]
+2021-04-15 10:41:17.092 TRACE 9496 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([mobile_n3_0_] : [VARCHAR]) - [9876543210]
+2021-04-15 10:41:17.093 TRACE 9496 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name4_0_] : [VARCHAR]) - [Jeya]
+2021-04-15 10:41:17.094 TRACE 9496 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([password5_0_] : [VARCHAR]) - [jeyaabcd]
+2021-04-15 10:41:17.095 TRACE 9496 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_nam6_0_] : [VARCHAR]) - [jeya]
+2021-04-15 10:41:17.097  INFO 9496 --- [http-nio-8080-exec-10] c.c.a.service.UserServiceImpl            : user is validated
+2021-04-15 10:41:18.428  INFO 9496 --- [http-nio-8080-exec-9] c.c.a.controller.UserController          : Inside get user controller
+2021-04-15 10:41:18.428  INFO 9496 --- [http-nio-8080-exec-9] c.c.a.service.UserServiceImpl            : Inside getuser service
+2021-04-15 10:41:18.430 DEBUG 9496 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : select usermodel0_.user_id as user_id1_0_, usermodel0_.email as email2_0_, usermodel0_.mobile_no as mobile_n3_0_, usermodel0_.name as name4_0_, usermodel0_.password as password5_0_, usermodel0_.user_name as user_nam6_0_ from user usermodel0_ where usermodel0_.user_name=?
+2021-04-15 10:41:18.433 TRACE 9496 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [jeya]
+2021-04-15 10:41:18.437 TRACE 9496 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_id1_0_] : [INTEGER]) - [1]
+2021-04-15 10:41:18.438 TRACE 9496 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_0_] : [VARCHAR]) - [jeya@gmail.com]
+2021-04-15 10:41:18.439 TRACE 9496 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([mobile_n3_0_] : [VARCHAR]) - [9876543210]
+2021-04-15 10:41:18.440 TRACE 9496 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name4_0_] : [VARCHAR]) - [Jeya]
+2021-04-15 10:41:18.441 TRACE 9496 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([password5_0_] : [VARCHAR]) - [jeyaabcd]
+2021-04-15 10:41:18.442 TRACE 9496 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_nam6_0_] : [VARCHAR]) - [jeya]
+2021-04-15 10:41:19.979  INFO 9496 --- [http-nio-8080-exec-8] c.c.a.service.UserServiceImpl            : Inside loadbyusername service
+2021-04-15 10:41:19.980 DEBUG 9496 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : select usermodel0_.user_id as user_id1_0_, usermodel0_.email as email2_0_, usermodel0_.mobile_no as mobile_n3_0_, usermodel0_.name as name4_0_, usermodel0_.password as password5_0_, usermodel0_.user_name as user_nam6_0_ from user usermodel0_ where usermodel0_.user_name=?
+2021-04-15 10:41:19.982 TRACE 9496 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [jeya]
+2021-04-15 10:41:19.985 TRACE 9496 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_id1_0_] : [INTEGER]) - [1]
+2021-04-15 10:41:19.987 TRACE 9496 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_0_] : [VARCHAR]) - [jeya@gmail.com]
+2021-04-15 10:41:19.988 TRACE 9496 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([mobile_n3_0_] : [VARCHAR]) - [9876543210]
+2021-04-15 10:41:19.989 TRACE 9496 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name4_0_] : [VARCHAR]) - [Jeya]
+2021-04-15 10:41:19.990 TRACE 9496 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([password5_0_] : [VARCHAR]) - [jeyaabcd]
+2021-04-15 10:41:19.991 TRACE 9496 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_nam6_0_] : [VARCHAR]) - [jeya]
+2021-04-15 10:41:19.991  INFO 9496 --- [http-nio-8080-exec-8] c.c.a.service.UserServiceImpl            : user has been loaded
+2021-04-15 10:41:19.995  INFO 9496 --- [http-nio-8080-exec-8] c.c.a.controller.UserController          : Inside Token Validation controller
+2021-04-15 10:41:19.996  INFO 9496 --- [http-nio-8080-exec-8] c.c.a.service.UserServiceImpl            : Inside get validity service
+2021-04-15 10:41:19.998  INFO 9496 --- [http-nio-8080-exec-8] c.c.a.service.UserServiceImpl            : Token is valid
+2021-04-15 10:41:20.002 DEBUG 9496 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : select usermodel0_.user_id as user_id1_0_, usermodel0_.email as email2_0_, usermodel0_.mobile_no as mobile_n3_0_, usermodel0_.name as name4_0_, usermodel0_.password as password5_0_, usermodel0_.user_name as user_nam6_0_ from user usermodel0_ where usermodel0_.user_name=?
+2021-04-15 10:41:20.004 TRACE 9496 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [jeya]
+2021-04-15 10:41:20.006 TRACE 9496 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_id1_0_] : [INTEGER]) - [1]
+2021-04-15 10:41:20.007 TRACE 9496 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_0_] : [VARCHAR]) - [jeya@gmail.com]
+2021-04-15 10:41:20.007 TRACE 9496 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([mobile_n3_0_] : [VARCHAR]) - [9876543210]
+2021-04-15 10:41:20.008 TRACE 9496 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name4_0_] : [VARCHAR]) - [Jeya]
+2021-04-15 10:41:20.008 TRACE 9496 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([password5_0_] : [VARCHAR]) - [jeyaabcd]
+2021-04-15 10:41:20.009 TRACE 9496 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_nam6_0_] : [VARCHAR]) - [jeya]
+2021-04-15 10:41:20.010  INFO 9496 --- [http-nio-8080-exec-8] c.c.a.service.UserServiceImpl            : user is validated
+2021-04-15 10:41:25.609  INFO 9496 --- [http-nio-8080-exec-7] c.c.a.controller.UserController          : Inside Login controller
+2021-04-15 10:41:25.610  INFO 9496 --- [http-nio-8080-exec-7] c.c.a.service.UserServiceImpl            : Inside loadbyusername service
+2021-04-15 10:41:25.612 DEBUG 9496 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : select usermodel0_.user_id as user_id1_0_, usermodel0_.email as email2_0_, usermodel0_.mobile_no as mobile_n3_0_, usermodel0_.name as name4_0_, usermodel0_.password as password5_0_, usermodel0_.user_name as user_nam6_0_ from user usermodel0_ where usermodel0_.user_name=?
+2021-04-15 10:41:25.614 TRACE 9496 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [jeya]
+2021-04-15 10:41:25.621 TRACE 9496 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_id1_0_] : [INTEGER]) - [1]
+2021-04-15 10:41:25.623 TRACE 9496 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_0_] : [VARCHAR]) - [jeya@gmail.com]
+2021-04-15 10:41:25.625 TRACE 9496 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([mobile_n3_0_] : [VARCHAR]) - [9876543210]
+2021-04-15 10:41:25.626 TRACE 9496 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name4_0_] : [VARCHAR]) - [Jeya]
+2021-04-15 10:41:25.627 TRACE 9496 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([password5_0_] : [VARCHAR]) - [jeyaabcd]
+2021-04-15 10:41:25.628 TRACE 9496 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_nam6_0_] : [VARCHAR]) - [jeya]
+2021-04-15 10:41:25.629  INFO 9496 --- [http-nio-8080-exec-7] c.c.a.service.UserServiceImpl            : user has been loaded
+2021-04-15 10:41:25.629  INFO 9496 --- [http-nio-8080-exec-7] c.c.a.service.UserServiceImpl            : Inside login service
+2021-04-15 10:41:25.630  INFO 9496 --- [http-nio-8080-exec-7] c.c.a.service.UserServiceImpl            : user is valid
+2021-04-15 10:41:25.631 DEBUG 9496 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : select usermodel0_.user_id as user_id1_0_, usermodel0_.email as email2_0_, usermodel0_.mobile_no as mobile_n3_0_, usermodel0_.name as name4_0_, usermodel0_.password as password5_0_, usermodel0_.user_name as user_nam6_0_ from user usermodel0_ where usermodel0_.user_name=?
+2021-04-15 10:41:25.632 TRACE 9496 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [jeya]
+2021-04-15 10:41:25.634 TRACE 9496 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_id1_0_] : [INTEGER]) - [1]
+2021-04-15 10:41:25.636  INFO 9496 --- [http-nio-8080-exec-7] c.c.a.service.UserServiceImpl            : user token has been generated
+2021-04-15 10:41:25.665  INFO 9496 --- [http-nio-8080-exec-6] c.c.a.service.UserServiceImpl            : Inside loadbyusername service
+2021-04-15 10:41:25.666 DEBUG 9496 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select usermodel0_.user_id as user_id1_0_, usermodel0_.email as email2_0_, usermodel0_.mobile_no as mobile_n3_0_, usermodel0_.name as name4_0_, usermodel0_.password as password5_0_, usermodel0_.user_name as user_nam6_0_ from user usermodel0_ where usermodel0_.user_name=?
+2021-04-15 10:41:25.667 TRACE 9496 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [jeya]
+2021-04-15 10:41:25.668 TRACE 9496 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_id1_0_] : [INTEGER]) - [1]
+2021-04-15 10:41:25.669 TRACE 9496 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_0_] : [VARCHAR]) - [jeya@gmail.com]
+2021-04-15 10:41:25.670 TRACE 9496 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([mobile_n3_0_] : [VARCHAR]) - [9876543210]
+2021-04-15 10:41:25.670 TRACE 9496 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name4_0_] : [VARCHAR]) - [Jeya]
+2021-04-15 10:41:25.671 TRACE 9496 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([password5_0_] : [VARCHAR]) - [jeyaabcd]
+2021-04-15 10:41:25.671 TRACE 9496 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_nam6_0_] : [VARCHAR]) - [jeya]
+2021-04-15 10:41:25.672  INFO 9496 --- [http-nio-8080-exec-6] c.c.a.service.UserServiceImpl            : user has been loaded
+2021-04-15 10:41:25.674  INFO 9496 --- [http-nio-8080-exec-6] c.c.a.controller.UserController          : Inside Token Validation controller
+2021-04-15 10:41:25.675  INFO 9496 --- [http-nio-8080-exec-6] c.c.a.service.UserServiceImpl            : Inside get validity service
+2021-04-15 10:41:25.676  INFO 9496 --- [http-nio-8080-exec-6] c.c.a.service.UserServiceImpl            : Token is valid
+2021-04-15 10:41:25.679 DEBUG 9496 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select usermodel0_.user_id as user_id1_0_, usermodel0_.email as email2_0_, usermodel0_.mobile_no as mobile_n3_0_, usermodel0_.name as name4_0_, usermodel0_.password as password5_0_, usermodel0_.user_name as user_nam6_0_ from user usermodel0_ where usermodel0_.user_name=?
+2021-04-15 10:41:25.680 TRACE 9496 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [jeya]
+2021-04-15 10:41:25.682 TRACE 9496 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_id1_0_] : [INTEGER]) - [1]
+2021-04-15 10:41:25.683 TRACE 9496 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_0_] : [VARCHAR]) - [jeya@gmail.com]
+2021-04-15 10:41:25.684 TRACE 9496 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([mobile_n3_0_] : [VARCHAR]) - [9876543210]
+2021-04-15 10:41:25.685 TRACE 9496 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name4_0_] : [VARCHAR]) - [Jeya]
+2021-04-15 10:41:25.685 TRACE 9496 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([password5_0_] : [VARCHAR]) - [jeyaabcd]
+2021-04-15 10:41:25.686 TRACE 9496 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_nam6_0_] : [VARCHAR]) - [jeya]
+2021-04-15 10:41:25.687  INFO 9496 --- [http-nio-8080-exec-6] c.c.a.service.UserServiceImpl            : user is validated
+2021-04-15 10:41:27.150  INFO 9496 --- [http-nio-8080-exec-5] c.c.a.controller.UserController          : Inside get user controller
+2021-04-15 10:41:27.151  INFO 9496 --- [http-nio-8080-exec-5] c.c.a.service.UserServiceImpl            : Inside getuser service
+2021-04-15 10:41:27.152 DEBUG 9496 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select usermodel0_.user_id as user_id1_0_, usermodel0_.email as email2_0_, usermodel0_.mobile_no as mobile_n3_0_, usermodel0_.name as name4_0_, usermodel0_.password as password5_0_, usermodel0_.user_name as user_nam6_0_ from user usermodel0_ where usermodel0_.user_name=?
+2021-04-15 10:41:27.154 TRACE 9496 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [jeya]
+2021-04-15 10:41:27.157 TRACE 9496 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_id1_0_] : [INTEGER]) - [1]
+2021-04-15 10:41:27.159 TRACE 9496 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_0_] : [VARCHAR]) - [jeya@gmail.com]
+2021-04-15 10:41:27.161 TRACE 9496 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([mobile_n3_0_] : [VARCHAR]) - [9876543210]
+2021-04-15 10:41:27.162 TRACE 9496 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name4_0_] : [VARCHAR]) - [Jeya]
+2021-04-15 10:41:27.163 TRACE 9496 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([password5_0_] : [VARCHAR]) - [jeyaabcd]
+2021-04-15 10:41:27.164 TRACE 9496 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_nam6_0_] : [VARCHAR]) - [jeya]
+2021-04-15 10:41:27.190  INFO 9496 --- [http-nio-8080-exec-4] c.c.a.service.UserServiceImpl            : Inside loadbyusername service
+2021-04-15 10:41:27.192 DEBUG 9496 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select usermodel0_.user_id as user_id1_0_, usermodel0_.email as email2_0_, usermodel0_.mobile_no as mobile_n3_0_, usermodel0_.name as name4_0_, usermodel0_.password as password5_0_, usermodel0_.user_name as user_nam6_0_ from user usermodel0_ where usermodel0_.user_name=?
+2021-04-15 10:41:27.193 TRACE 9496 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [jeya]
+2021-04-15 10:41:27.195 TRACE 9496 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_id1_0_] : [INTEGER]) - [1]
+2021-04-15 10:41:27.196 TRACE 9496 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_0_] : [VARCHAR]) - [jeya@gmail.com]
+2021-04-15 10:41:27.197 TRACE 9496 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([mobile_n3_0_] : [VARCHAR]) - [9876543210]
+2021-04-15 10:41:27.197 TRACE 9496 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name4_0_] : [VARCHAR]) - [Jeya]
+2021-04-15 10:41:27.197 TRACE 9496 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([password5_0_] : [VARCHAR]) - [jeyaabcd]
+2021-04-15 10:41:27.198 TRACE 9496 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_nam6_0_] : [VARCHAR]) - [jeya]
+2021-04-15 10:41:27.198  INFO 9496 --- [http-nio-8080-exec-4] c.c.a.service.UserServiceImpl            : user has been loaded
+2021-04-15 10:41:27.200  INFO 9496 --- [http-nio-8080-exec-4] c.c.a.controller.UserController          : Inside Token Validation controller
+2021-04-15 10:41:27.201  INFO 9496 --- [http-nio-8080-exec-4] c.c.a.service.UserServiceImpl            : Inside get validity service
+2021-04-15 10:41:27.202  INFO 9496 --- [http-nio-8080-exec-4] c.c.a.service.UserServiceImpl            : Token is valid
+2021-04-15 10:41:27.207 DEBUG 9496 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select usermodel0_.user_id as user_id1_0_, usermodel0_.email as email2_0_, usermodel0_.mobile_no as mobile_n3_0_, usermodel0_.name as name4_0_, usermodel0_.password as password5_0_, usermodel0_.user_name as user_nam6_0_ from user usermodel0_ where usermodel0_.user_name=?
+2021-04-15 10:41:27.209 TRACE 9496 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [jeya]
+2021-04-15 10:41:27.212 TRACE 9496 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_id1_0_] : [INTEGER]) - [1]
+2021-04-15 10:41:27.214 TRACE 9496 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_0_] : [VARCHAR]) - [jeya@gmail.com]
+2021-04-15 10:41:27.215 TRACE 9496 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([mobile_n3_0_] : [VARCHAR]) - [9876543210]
+2021-04-15 10:41:27.216 TRACE 9496 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name4_0_] : [VARCHAR]) - [Jeya]
+2021-04-15 10:41:27.216 TRACE 9496 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([password5_0_] : [VARCHAR]) - [jeyaabcd]
+2021-04-15 10:41:27.217 TRACE 9496 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_nam6_0_] : [VARCHAR]) - [jeya]
+2021-04-15 10:41:27.218  INFO 9496 --- [http-nio-8080-exec-4] c.c.a.service.UserServiceImpl            : user is validated
+2021-04-15 10:41:37.955  INFO 9496 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
